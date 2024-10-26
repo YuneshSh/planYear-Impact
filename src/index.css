@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-flow__edge.animated path {
+  stroke-width: 2;
+  animation: flowAnimation 30s linear infinite;
+}
+
+@keyframes flowAnimation {
+  from {
+    stroke-dasharray: 5;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: 5;
+    stroke-dashoffset: -10;
+  }
+}
